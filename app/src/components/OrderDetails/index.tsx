@@ -1,9 +1,10 @@
 import ButtonLarge from "components/ButtonLarge";
 import ButtonToggle from "components/ButtonToggle";
+import OrderItem from "components/OrderItem";
 import OrderItemList from "components/OrderItemList";
 import * as S from "./style";
 
-const orderDetails = () =>{
+const OrderDetails = () =>{
     return(
         <S.OrderDetails>
             <S.OrderDetailsTitle>Dtalhes do Pedido</S.OrderDetailsTitle>
@@ -22,7 +23,7 @@ const orderDetails = () =>{
 
                 </S.OrderDetailsListTitle>
                 }
-                list={"Lista de Itens"}
+                list={<OrderItem/>}
                 footer={
                     <S.OrderDetailsListFooter>
                         <S.OrderDetailsListFooterRow>
@@ -38,4 +39,4 @@ const orderDetails = () =>{
     );
 }
 
-export default orderDetails;
+export default OrderDetails;
