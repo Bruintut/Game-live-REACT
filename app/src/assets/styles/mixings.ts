@@ -2,7 +2,7 @@ import { css } from "styled-components";
 import { colors } from "./colors";
 import { constants } from "./constants";
 import down from "assets/icons/down.svg";
-import { act } from "react-dom/test-utils";
+
 
 const logoStyle = () => css`
   font-family: ${constants.logoFontFamily};
