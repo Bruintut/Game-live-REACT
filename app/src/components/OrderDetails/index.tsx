@@ -1,3 +1,4 @@
+import ButtonToggle from "components/ButtonToggle";
 import * as S from "./style";
 
 const orderDetails = () =>{
@@ -5,10 +6,12 @@ const orderDetails = () =>{
         <S.OrderDetails>
             <S.OrderDetailsTitle>Dtalhes do Pedido</S.OrderDetailsTitle>
             <S.OrderDetailsButtonGroup>
-
+                <ButtonToggle active={true} value="Comer no local"/>
+                <ButtonToggle active={false} value="Para Viagem"/>
+                <ButtonToggle active={true} value="Delivery"/>
             </S.OrderDetailsButtonGroup>
             <S.OrderDetailsList>
-                <p>Itens do Pedido</p>
+                
             </S.OrderDetailsList>
         </S.OrderDetails>
     );
