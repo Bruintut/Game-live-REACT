@@ -6,6 +6,7 @@ import { RoutePath } from "types/routes";
 import { navigationItems } from "data/navigation";
 import ProductItemList from "components/ProductItemList";
 import ProductItem from "components/ProductItem";
+import OrderDetails from "components/OrderDetails";
 
 
 const Home =()=>{
@@ -40,7 +41,7 @@ const Home =()=>{
                 </div>
             </S.HomeContent>
             <aside>
-                <p>onde ficarão os pedidos</p>
+                <OrderDetails/>
             </aside>
         </S.Home>
     );
